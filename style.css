@@ -1,0 +1,248 @@
+*, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    background-color: gray;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-container {
+    background-color: black;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.ul-navbar {
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.li-navbar {
+    list-style-type: none;
+    margin: 1px;
+    padding: 10px 20px;
+    color: white;
+    transition: background-color 0.5s ease;
+}
+
+.li-navbar:hover{
+    background-color: gray;
+    border-radius: 10px;
+}
+
+.a-navbar {
+    font-size: 20px;
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+}
+
+.content1-container {
+    background-color: white;
+    display: flex;          
+    align-items: center;    
+    gap: 15px;              
+    padding-left: 20px;     
+}
+
+.img-content1 {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;     
+}
+
+.nama-saya {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.materi-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+    padding: 40px; 
+    background-color: gray;
+}
+
+.materi-img {
+    width: 100%;
+    height: auto;
+    max-height: 350px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.materi-page {
+    flex: 1;
+    display: flex;
+    justify-content: center;   
+    align-items: center;
+    background-image: url(hollowknight1.jpg);
+    min-height: calc(100vh - 150px);
+    padding: 20px; 
+
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.materi-box {
+    background-color: white;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    color: black;
+    max-width: 1000px;     
+    width: 90%;
+    text-decoration: none;
+    color: inherit;
+}
+
+.materi-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.materi-box h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.materi-box h3,
+.materi-box p {
+    text-decoration: none; 
+    color: black;
+}
+
+.materi-box p,
+.materi-box li {
+    font-family: 'Open Sans', sans-serif;
+    text-align: justify;
+    font-size: 22px;
+    line-height: 1.8;
+}
+
+.materi-box ol,
+.materi-box ul {
+    text-align: justify;
+    padding-left: 20px;
+}
+
+.profile-section {
+    flex: 1;
+    background-image: url("limbo.png");
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.profile-card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    max-width: 800px;
+    width: 100%;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-info {
+    flex: 1;
+}
+
+.profile-info h2 {
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+.profile-info p {
+    font-size: 16px;
+    margin: 5px 0;
+    color: black;
+    line-height: 1.8;
+}
+
+.footer {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+}
+
+/* Responsive Design Section*/
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .materi-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* HP */
+@media (max-width: 600px) {
+  .ul-navbar {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .materi-container {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .materi-box h3 {
+    font-size: 20px;
+  }
+
+  .materi-box p {
+    font-size: 14px;
+  }
+
+  .profile-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-img {
+    width: 120px;
+    height: 120px;
+  }
+}
