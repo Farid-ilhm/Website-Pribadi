@@ -26,14 +26,56 @@
 
     <div class="materi-page">
         <div class="materi-box">
-            <h3>LOREM IPSUM DOLOR SIT AMET</h3>
-            <p>LOREM IPSUM DOLOR SIT AMET</p>
-            <p>LOREM IPSUM DOLOR SIT AMET:</p>
+            <h3>APA ITU ATTRIBUTE, ENTITAS, DAN RELASI DALAM ERD</h3>
+            <p>Dalam bahasan ini akan membahas apa itu Atribute, Entitas, dan Relasi dalam ERD. ketiga istilah tersebut merupakan bagian dari konsep dasar dalam desain database relasional. 
+                Database relasional adalah cara yang paling umum digunakan untuk menyimpan dan mengelola data dalam organisasi atau perusahaan.</p>
+            <p><b>ENTITAS:</b></p>
+            <p>Entitas adalah objek dalam dunia nyata yang dapat diidentifikasi dan dibedakan dari objek lain, entitas bisa berupa orang, benda, tempat, atau kejadian.
+                 Dalam konteks database, entitas mewakili objek yang ingin disimpan dalam database, contohnya:</p>
             <ul>
-                <li>LOREM IPSUM DOLOR SIT AMET</li>
-                <li>LOREM IPSUM DOLOR SIT AMET</li>
+                <li>Mahasiswa</li>
+                <li>Dosen</li>
+                <li>Mata Kuliah</li>
+                <li>Transaksi</li>
             </ul>
-            <p>LOREM IPSUM DOLOR SIT AMET</p>
+            <p><b>ATRIBUTE:</b></p>
+            <p>Setiap entitas pasti memiliki atribute yang berfungsi untuk menjelaskan atau mendeskripsikan karakteristik dari entitas tersebut. Ada beberapa jenis atribute yang biasa digunakan
+                dalam ERD. Berikut adalah jenis-jenisnya.</p>
+            <ul>
+                <li>Atribute Kunci</li>
+                <p>Atribute kunci atau key attributes adalah atribute yang berfungsi untuk menentukan data yang bersifat penting. Biasanya atribute kunci ini berbentuk angka atau numerik. contohnya
+                    dari atribute ini adalah No. KTP, NIM, dan lain-lain. Atribute kunci ini dilambangkan dengan lingkaran lonjong dengan keterangan di dalamnya yang diberi garis bawah.</p>
+                <li>Atribute Simpel</li>
+                <p>Berikutnya adalah atribute simpel. Atribute simpel adalah atribute yang tidak dapat dapat dipecah lagi dan bernilai tunggal. Contoh dari atribute ini adalah alamat kantor, nama penerbit,
+                    dan lain-lain.</p>
+                <li>Atribute Multinilai</li>
+                <p>Atribute multinilai atau Multivalue Attributes adalah atribute yang memiliki atribute lebih dari satu nilai. Contoh dari atribute ini adalah sebuah website artikel yang memiliki beberapa penulis.</p>
+                <li>Atribute Gabungan</li>
+                <p>Selanjutnya adalah atribute gabungan atau Composite Attributes. Atribute gabungan adalah atribute yang terdiri dari beberapa atribute yang berukuran lebih kecil dan memiliki arti tertentu. 
+                    Contoh dari atribute ini adalah sebuah nama yang terdiri atas nama depan, nama tengah, dan nama belakang.</p>
+                <li>Atribute Derivatif</li>
+                <p>Yang terakhir adalah atribute derivatif. Atribute derivatif adalah atribute yang dihasilkan dari atribute lain dan atributenya tidak wajib untuk ditulis dalam Entity Relationship Diagram. 
+                    Contoh dari atribut ini adalah selisih harga, usia, dan kelas.</p>
+            </ul>
+            <p>Istilah Atribute mengacu pada informasi yang berkaitan erat dengan entitas. Konsep ini akan mencakup data-data yang lebih terperinci seperti alamat, nama, atau nomor kontak pelanggan.</p>
+            <p><b>RELASI:</b></p>
+            <p>Relasi adalah hubungan antara dua atau lebih entitas yang menunjukkan bagaimana entitas tersebut saling berinteraksi dalam sistem.<br>Tanpa adanya relasi, data dari satu entitas tidak akan terhubung dengan entitas lain, sehingga tidak bisa digunakan secara menyeluruh.</p>
+            <p>Relasi juga menjelaskan makna logis antar entitas — misalnya, siapa yang melakukan apa, atau bagaimana satu entitas terlibat dengan entitas lainnya.<br> Contohnya:</p>
+            <ul>
+                <li>Mahasiswa mengambil mata kuliah.</li>
+                <li>Dosen mengajar mata kuliah.</li>
+                <li>Mahasiswa melakukan pembayaran.</li>
+            </ul>
+            <p>Setiap hubungan ini memiliki arah dan tingkat hubungan (cardinality), seperti:</p>
+            <ul>
+                <li>One to One (1:1) → satu entitas hanya berhubungan dengan satu entitas lain.</li>
+                <p>Contoh: satu dosen memiliki satu ruang kerja.</p>
+                <li>One to Many (1:N) → satu entitas bisa berhubungan dengan banyak entitas lain.</li>
+                <p>Contoh: satu dosen bisa mengajar banyak mata kuliah.</p>
+                <li>Many to Many (M:N) → banyak entitas dari satu jenis bisa berhubungan dengan banyak entitas dari jenis lain.</li>
+                <p>Contoh: banyak mahasiswa bisa mengambil banyak mata kuliah.</p>
+            </ul>
+            <p>Dengan memahami konsep entitas, atribute, dan relasi dalam ERD, kita bisa merancang struktur database yang lebih teratur, efisien, dan mudah diimplementasikan. ERD membantu kita melihat gambaran besar hubungan antar data sebelum proses pembuatan tabel di database dimulai.</p>
         </div>
     </div>
 
