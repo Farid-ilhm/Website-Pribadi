@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Materi 1 - Harapan dari MK Basis Data</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <div class="navbar-container">
+    <div class="brand">
+        <h3><span>AHMAD FARID</span> ILHAM FAUZI</h3>
+    </div>
+    <ul class="ul-navbar">
+        <li class="li-navbar">
+            <a href="../index.html" class="a-navbar">HOME</a>
+        </li>
+        <li class="li-navbar">
+            <a href="../profile.html" class="a-navbar">PROFILE</a>
+        </li>
+        <li class="li-navbar">
+            <a href="https://ubpkarawang.ac.id/" class="a-navbar" target="_blank">UBP KARAWANG</a>
+        </li>
+    </ul>
+    </div>
+    <!-- NAVBAR END -->
+
+    <div class="materi-page">
+        <div class="materi-box">
+            <h3>APA ITU PRIMARY KEY, FOREIGN KEY, DAN CANDIDATE KEY BESERTA CONTOHNYA</h3>
+            <p><b>APA ITU KEY DALAM ERD?</b></p>
+            <p>Key dalam Entity Relationship Diagram (ERD) adalah atribut yang dipilih untun mengidentifikasi entitas secara unik. Keunikan atribut key memungkinkan entitas
+                tersebut dibedakan dari entitas lain dalam basis data.</p>
+            <br>
+            <p><b>APA FUNGSI KEY?</b></p>
+            <p>Key dalam ERD berfungsi untuk memberikan identifikasi pada setiap baris data dalam sebuah tabel dan sebagai penghubung antara satu tabel dan juuga dengan tabel lainnya.
+                Key juga sangat penting sebagai tanda pengenal dan penghubung antar tabel dalam suatu relational database. Key dapat dipahami sebagai 'tanda pengenal' untuk mengidentifikasi
+                sebuah baris di dalam tabel. Key juuga berperan penting sebagai penghubung antara satu tabel dan juga dengan tabel lainnya. Key dalam database juga berfungsi untuk menjalankan
+                fungsi sebagai 'tanda pengenal' dan sebagai penghubung antar tabel.</p>
+            <br>
+            <p><b>PENGERTIAN PRIMARY KEY</b></p>
+            <p>Primary Key adalah atribut atau kumpulan atribut yang digunakan untuk mengidentifikasi setiap baris data dalam sebuah tabel secara unik. Primary Key dipilih karena keunikan,
+                sehingga dapat dibedakan dengan baris data yang lain. Primary Key berfungsi sebagai tanda pengenal dan penghubung antar tabel dalam satu relational database. Primary Key juga
+                sangat penting dalam proses pencarian data dan memastikan integritas antar data pada tabel.</p>
+            <br>
+            <p><b>PERAN DAN PENTINGNYA PRIMARY KEY</b></p>
+            <p>Peran dan pentingnya Primary Key dalam ERD antara lain:</p>
+            <ol>
+                <li>Memberikan identifikasi pada setiap baris data dalam sebuah tabel</li>
+                <li>Menjadi penghubung antara satu tabel dan juga dengan tabel lainnya.</li>
+                <li>Memastikan setiap baris data dalam tabel bersifat unik atau berbeda antara baris satu dengan baris lain.</li>
+                <li>Memudahkan dalam pengolahan data dan proses pencarian data.</li>
+                <li>Menjaga integritas antar data pada tabel.</li>
+                <li>Mencegah terjadinya duplikasi data.</li>
+                <li>Membantu melakukan pencarian dengan waktu yang cepat.</li>
+            </ol>
+            <br>
+            <p>Primary Key dapat dipilih dari satu atau kumpulan atribut yang memenuhi syarat-syarat tertentu, seperti harus berisi nilai unik, tidak boleh berisi nilai kosong, dan harus berdiri sendiri 
+                pada tabel atau atomik. Primary Key juga harus dipilih dengan hati-hati agar tidak terjadi banyak perubahan karena kesalahan.</p>
+            <br>
+            <p>Dalam ERD, Primary Key direpresentasikan dengan simbol kunci atau underline pada atribut yang dipilih sebagai Primary Key. Primary Key juga dapat digunakan sebagai Foreign 
+                Key pada tabel lain untuk menghubungkan antar tabel.</p>
+            <br>
+            <p><b>CONTOH PENERAPAN PRIMARY KEY DALAM ERD</b></p>
+            <ol>
+                <li>Tabel "Mahasiswa":</li>
+                <img src="../images/Tabel Mahasiswa.png" alt="Tabel Mahasiswa" class="isimateri-img">
+                <p>Primary Key: nim</p>
+                <p>Dalam ERD, nim menjadi kunci unik yang mengidentifikasi setiap mahasiswa dalam tabel.</p>
+
+                <li>Tabel "Wali Dosen":</li>
+                <img src="../images/Tabel Wali Dosen.png" alt="Tabel Wali Dosen" class="isimateri-img">
+                <p>Primary Key: nidn</p>
+                <p>Dalam ERD, nidn menjadi kunci unik yang mengidentifikasi setiap dosen dalam tabel.</p>
+
+                <li>Tabel "Pelanggan":</li>
+                <img src="../images/Tabel Pelanggan.png" alt="Tabel Pelanggan" class="isimateri-img">
+                <p>Primary Key: id_pelanggan</p>
+                <p>Dalam ERD, id_pelanggan menjadi kunci unik yang mengidentifikasi setiap pelanggan dalam tabel.</p>
+
+                <li>Tabel "Sales":</li>
+                <img src="../images/Tabel Sales.png" alt="Tabel Sales" class="isimateri-img">
+                <p>Primary Key: id_sales</p>
+                <p>Dalam ERD, id_sales menjadi kunci unik yang mengidentifikasi sales dalam tabel.</p>
+
+                <li>Tabel "Produk":</li>
+                <img src="../images/Tabel Produk.png" alt="Tabel Produk" class="isimateri-img">
+                <p>Primary Key: id_produk</p>
+                <p>Dalam ERD, id_produk menjadi kunci unik yang mengidentifikasi produk dalam tabel.</p>
+            </ol>
+
+            <br>
+
+            <p><b>PENGERTIAN FOREIGN KEY</b></p>
+            <p>Foreign Key adalah atribut atau kumpulan atribut yang digunakan untuk menghubungkan antara tabel master dengan tabel turunannya. Foreign Key digunakan untuk menciptakan
+                hubungan antara dua tabel dalam database relasional. Foreign Key juga dikenal sebagai kunci tamu karena merupakan kunci yang terdapat pada tabel kedua atau child. Foreign
+                Key merujuk pada suatu kolom yang unik untuk menghubungkan antar tabel.</p>
+            <br>
+            <p><b>PERAN DAN PENTINGNYA FOREIGN KEY</b></p>
+            <p>Peran dan pentingnya Foreign Key dalam ERD antara lain</p>
+            <ol>
+                <li>Menghubungkan antara tabel master dengan tabel turunannya.</li>
+                <li>Menciptakan hubungan antara dua tabel dalam database relasional.</li>
+                <li>Memastikan integritas referensial antar tabel.</li>
+                <li>Memudahkan dalam pengolahan data dan proses pencarian data.</li>
+                <li>Menjaga integritas antar data pada tabel.</li>
+                <li>Mencegah terjadinya duplikasi data.</li>
+            </ol>
+            <br>
+            <p>Foreign Key harus dipilih dengan hati-hati agar tidak terjadi banyak perubahan karena kesalahan. Foreign Key juga harus memenuhi syarat-syarat tertentu, seperti harus berisi 
+                nilai unik, tidak boleh berisi nilai kosong, dan harus berdiri sendiri pada tabel atau atomik.</p>
+            <br>
+            <p>Dalam ERD, Foreign Key direpresentasikan dengan simbol kunci yang terhubung dengan Primary Key pada tabel lain. Foreign Key juga dapat digunakan sebagai Primary Key pada tabel 
+                turunan untuk menghubungkan antar tabel.</p>
+            <br>
+            <p><b>CONTOH PENERAPAN FOREIGN KEY DALAM ERD</b></p>
+            <ol>
+                <li>Hubungan antara Tabel "Mahasiswa" dan "Wali Dosen</li>
+                <img src="../images/Tabel Mahasiswa dan Waldos.png" alt="Tabel Mahasiswa dan Wali Dosen" class="isimateri-img">
+                <p>Dalam ERD sistem akademik ini, tabel "MAHASISWA" memiliki Foreign Key dalam bentuk atribut "WALI DOSEN_nidn" yang merujuk ke Primary Key "nidn" dalam tabel "WALI DOSEN." 
+                    Hal ini memungkinkan kita untuk mengidentifikasi dosen wali yang bertanggung jawab atas mahasiswa tertentu.</p>
+                <li>Hubungan antara Tabel "Sales" dan "Pelanggan"</li>
+                <img src="../images/Tabel Sales dan Pelanggan.png" alt="Tabel Sales dan Pelanggan" class="isimateri-img">
+                <p>Dalam ERD sistem penjualan ini, tabel "PELANGGAN" memiliki Foreign Key dalam bentuk atribut "SALES_id_sales" yang merujuk ke Primary Key "id_sales" dalam tabel "SALES." 
+                    Hal ini memungkinkan kita untuk mengidentifikasi petugas sales yang melayani atau bertanggung jawab atas pelanggan tertentu.</p>
+                <li>Hubungan antara Tabel "Kategori" dan "Produk"</li>
+                <img src="../images/Tabel Kategori dan Produk.png" alt="Tabel Kategori dan Produk" class="isimateri-img">
+                <p>Dalam ERD sistem penjualan ini, tabel "PRODUK" memiliki Foreign Key dalam bentuk atribut "KATEGORI_id_kategori" yang merujuk ke Primary Key "id_kategori" dalam tabel "KATEGORI." 
+                    Hal ini memungkinkan kita untuk mengidentifikasi kategori yang menjadi kelompok produk tertentu.</p>
+                <li>Hubungan antara Tabel "Hotel" dan "Kamar"</li>
+                <img src="../images/Tabel Hotel dan Kamar.png" alt="Tabel Hotel dan Kamar" class="isimateri-img">
+                <p>Dalam ERD sistem reservasi hotel ini, tabel "KAMAR" memiliki Foreign Key dalam bentuk atribut "HOTEL_id_hotel" yang merujuk ke Primary Key "id_hotel" dalam tabel "HOTEL." 
+                    Hal ini memungkinkan kita untuk mengidentifikasi hotel tempat kamar tertentu berada.</p>
+                <li>Hubungan antara Tabel "Supplier" dan "Barang"</li>
+                <img src="../images/Tabel Supplier dan Barang.png" alt="Tabel Supplier dan Barang" class="isimateri-img">
+                <p>Dalam ERD sistem inventaris atau penjualan ini, tabel "BARANG" memiliki Foreign Key dalam bentuk atribut "SUPPLIER_id_supplier" yang merujuk ke Primary Key "id_supplier" dalam tabel "SUPPLIER." 
+                    Hal ini memungkinkan kita untuk mengidentifikasi pemasok (supplier) yang menyediakan barang tertentu.</p>
+            </ol>
+
+            <br>
+
+            <p><b>PENGERTIAN CANDIDATE KEY</b></p>
+            <p>Candidate Key adalah kumpulan atribut yang dapat membedakan setiap baris data dalam sebuah relasi secara unik. Candidate Key juga dikenal sebagai kunci calon karena merupakan kunci yang 
+                memenuhi syarat untuk menjadi Primary Key. Candidate Key berfungsi sebagai tanda pengenal dan penghubung antar tabel dalam suatu relational database.</p>
+            <br>
+            <p><b>PERAN DAN PENTINGNYA CANDIDATE KEY</b></p>
+            <p>Peran dan pentingnya Candidate Key dalam ERD antara lain:</p>
+            <ol>
+                <li>Memberikan identifikasi pada setiap baris data dalam sebuah tabel.</li>
+                <li>Menjadi kandidat untuk menjadi Primary Key pada tabel.</li>
+                <li>Memastikan setiap baris data dalam tabel bersifat unik atau berbeda antara baris satu dengan baris lain.</li>
+                <li>Memudahkan dalam pengolahan data dan proses pencarian data.</li>
+                <li>Menjaga integritas antar data pada tabel.</li>
+                <li>Mencegah terjadinya duplikasi data.</li>
+            </ol>
+            <br>
+            <p>Candidate Key harus dipilih dengan hati-hati agar tidak terjadi banyak perubahan karena kesalahan. Candidate Key juga harus memenuhi syarat-syarat tertentu, seperti harus berisi nilai unik, 
+                tidak boleh berisi nilai kosong, dan harus berdiri sendiri pada tabel atau atomik.</p>
+            <br>
+            <p>Dalam ERD, Candidate Key direpresentasikan dengan simbol underline pada atribut yang memenuhi syarat untuk menjadi Primary Key. Candidate Key juga dapat digunakan sebagai Foreign Key pada 
+                tabel lain untuk menghubungkan antar tabel.</p>
+            <br>
+            <p><b>CONTOH PENERAPAN CANDIDAT KEY DALAM ERD</b></p>
+            <ol>
+                <li>Tabel "Mahasiswa"</li>
+                <img src="../images/Tabel Mahasiswa.png" alt="Tabel Mahasiswa" class="isimateri-img">
+                <p>Dalam ERD sistem akademik, tabel "MAHASISWA" memiliki minimal dua Candidate Key, yaitu "nim" (Nomor Induk Mahasiswa) dan "email". Kedua atribut ini memenuhi syarat sebagai kunci unik yang
+                    dapat digunakan untuk mengidentifikasi setiap mahasiswa secara unik.</p>
+                
+                <li>Tabel "Wali Dosen"</li>
+                <img src="../images/Tabel Wali Dosen.png" alt="Tabel Wali Dosn" class="isimateri-img">
+                <p>Dalam ERD sistem akademik, tabel "WALI DOSEN" memiliki minimal dua Candidate Key, yaitu "nidn" (Nomor Induk Dosen Nasional) dan "email". Kedua atribut ini dapat digunakan untuk mengidentifikasi 
+                    setiap dosen wali secara unik.</p>
+
+                <li>Tabel "Pelanggan"</li>
+                <img src="../images/Tabel Pelanggan.png" alt="Tabel Pelanggan" class="isimateri-img">
+                <p>Dalam ERD sistem penjualan, tabel "PELANGGAN" memiliki minimal dua Candidate Key, yaitu "id_pelanggan" dan "email". Kedua atribut ini dapat digunakan untuk mengidentifikasi setiap pelanggan secara unik.</p>
+
+                <li>Tabel "Sales"</li>
+                <img src="../images/Tabel Sales.png" alt="Tabel Sales" class="isimateri-img">
+                <p>Dalam ERD sistem penjualan, tabel "SALES" memiliki minimal dua Candidate Key, yaitu "id_sales" dan "email_sales". Kedua atribut ini dapat digunakan untuk mengidentifikasi setiap petugas sales secara unik.</p>
+
+                <li>Tabel "Produk"</li>
+                <img src="../images/Tabel Produk.png" alt="Tabel Produk" class="isimateri-img">
+                <p>Dalam ERD toko online, tabel "PRODUK" memiliki minimal dua Candidate Key, yaitu "id_produk" dan "nama_produk". Kedua atribut ini mungkin dapat digunakan untuk mengidentifikasi setiap produk secara unik,
+                    asumsi nama produk tidak pernah berulang.</p>
+            </ol>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2025 Ahmad Farid Ilham Fauzi | All Rights Reserved</p>
+    </div>
+    
+</body>
+</html>

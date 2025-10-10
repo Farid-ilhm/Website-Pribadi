@@ -93,20 +93,18 @@ body {
 .materi-page {
     flex: 1;
     display: flex;
-    justify-content: center;   
+    justify-content: center; 
     align-items: center;
-    background-image: url(images/hollowknight1.jpg);
+    
     min-height: calc(100vh - 150px);
     padding: 20px; 
-
+    padding-top: 120px;
+    
+    background-image: url(images/hollowknight1.jpg);
     background-size: cover;
     background-position: center; 
     background-repeat: no-repeat; 
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 120px;
+    background-attachment: fixed;
 }
 
 .materi-box {
@@ -152,6 +150,12 @@ body {
 .materi-box ul {
     text-align: justify;
     padding-left: 20px;
+}
+
+.isimateri-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .profile-section {
