@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Materi 4 - Physical Model</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <<div class="navbar-container">
+    <div class="brand">
+        <h3><span>AHMAD FARID</span> ILHAM FAUZI</h3>
+    </div>
+    <ul class="ul-navbar">
+        <li class="li-navbar">
+            <a href="../index.html" class="a-navbar"><b>HOME</b></a>
+        </li>
+        <li class="li-navbar">
+            <a href="../profile.html" class="a-navbar"><b>PROFILE</b></a>
+        </li>
+        <li class="li-navbar">
+            <a href="https://ubpkarawang.ac.id/" class="a-navbar" target="_blank"><b>UBP KARAWANG</b></a>
+        </li>
+    </ul>
+    </div>
+    <!-- NAVBAR END -->
+
+    <div class="materi-page">
+        <div class="materi-box">
+            <h3>APA ITU NORMALISASI?</h3>
+            <p>Normalisasi adalah serangkaian aturan atau tahapan yang bertujuan untuk mengeliminasi redundansi data dan memastikan data disimpan dengan cara yang efisien dan konsisten.
+                Proses normalisasi terdiri dari beberapa bentuk normal (normal forms), dari 1NF (First Normal Form) hingga 5NF (Fifth Normal Form), meskipun yang paling umum digunakan
+                adalah hingga 3NF (Third Normal Form).</p>
+            <br>
+            <ol>
+                <li><b>First Normal Form (1NF):</b> Setiap kolom dalam tabel harus memiliki nilai atomik, artinya tidak boleh ada kolom dengan nilai yang dapat dipecah menjadi beberapa bagian.</li>
+                <li><b>Second Normal Form (2NF):</b> Sudah memenuhi 1NF, dan semua atribut bukan kunci utama harus bergantung sepenuhnya pada kunci utama.</li>
+                <li><b>Third Normal Form (3NF):</b> Sudah memenuhi 2NF, dan semua atribut bukan kunci utama harus bergantung hanya pada kunci utama, bukan pada atribut bukan kunci lainnya.</li>
+            </ol>
+            <br>
+            <p><b>PENTINGNYA NORMALIASI DALAM ERD</b></p>
+            <ol>
+                <li><b>Mengruangi Redundansi Data</b> dengan normalisasi, data yang redundan atau duplikat dapat dikurangi secara signifikan. Hal ini berarti bahwa informasi yang sama tidak perlu
+                    disimpan di lebih dari satu tempat. Sebagai contoh, dalam sebuah sistem manajemen sekolah, informasi tentang siswa hanya perlu disimpan sekali dalam tabel siswa, dan tidak perlu
+                    diduplikasi dalam tabel lain.</li>
+                <li><b>Memastikan Integritas Data</b> normalisasi membantu menjaga Integritas data dengan memastikan bahwa setiap bagian data hanya disimpan sekali. Ini mengurangi risiko inkonsistensi
+                    data yang dapat terjadi jika data yang sama diperbarui di beberapa tempat. Sebagai contoh, jika alamat seorang siswa berubah, perubahan tersebut hanya perlu dilakukan di satu tempat.</li>
+                <li><b>Mempermudah Pemeliharan Data</b> dengan data yang terorganisir dengan baik, pemeliharaan data menjadi lebih mudah. Proses seperti pembaruan, penghapusan, dan penambahan data dapat dilakukan
+                    dengan lebih efisien dan dengan risiko kesalahan yang lebih kecil.</li>
+                <li><b>Meningkatkan Kinerja Basis Data</b> basis data yang ternormalisasi cenderung memiliki kinerja yang lebih baik karena struktur tabel yang lebih sederhana dan kueri yang lebih efisien. Ini
+                    karena sistem basis data tidak perlu mencari dan menggabungkan data yang tersebar di banyak tempat.</li>
+                <li><b>Meningkatkan Fleksibilitas Desain Basis Data</b> normalisasi membantu dalam merancang basis data yang lebih fleksibel. Ketika ada perubahan dalam persyaratan bisnis, basis data yang ternormalisasi
+                    lebih mudah diubah dan diperluas tanpa harus melakukan perubahan besar pada struktur yang ada.</li>
+            </ol>
+            <br>
+            <p><b>IMPLEMENTASI NORMALIASI DALAM ERD</b></p>
+            <p>Untuk mengimplementasikan normalisasi dalam ERD, kita perlu mengikuti langkah-langkah berikut:</p>
+            <ol>
+                <li><b>Identifikasi Entitas dan Atributnya</b> langkah pertama adalah mengidentifikasi semua entitas yang relevan dan atribut-atribut yang melekat pada setiap entitas.</li>
+                <li><b>Tentukan Kunci Utama</b> pilih atribut yang akan menjadi kunci utama untuk setiap entitas. Kunci utama adalah atribut yang unik untuk setiap entitas.</li>
+                <li><b>Pecah Tabel yang Mengandung Redundansi</b> jika ada tabel yang mengandung redundansi data, pecah tabel tersebut menjadi beberapa tabel yang lebih kecil sesuai dengan aturan normalisasi.</li>
+                <li><b>Tetapkan Hubungan Antar Entitas</b> gunakan ERD untuk menggambarkan hubungan antar entitas yang telah ternormalisasi.</li>
+            </ol>
+            <br>
+            <p><b>KESIMPULAN</b></p>
+            <br>
+            <p>Normalisasi dalam ERD sangat penting untuk memastikan bahwa basis data yang dirancang efisien, bebas dari redundansi, dan mudah di-maintenance. Dengan menerapkan normalisasi, kita dapat menciptakan
+                basis data yang lebih handal, konsisten, dan mampu mendukung kebutuhan bisnis yang dinamis. Oleh karena itu, memahami dan menerapkan normalisasi adalah keterampilan esensial bagi setiap desainer
+                basis data.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2025 Ahmad Farid Ilham Fauzi | All Rights Reserved</p>
+    </div>
+
+</body>
+</html>
