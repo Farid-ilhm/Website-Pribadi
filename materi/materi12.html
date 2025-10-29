@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Materi 12 - SQL, DDL, DML, DCL, dan TCL</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <<div class="navbar-container">
+    <div class="brand">
+        <h3><span>AHMAD FARID</span> ILHAM FAUZI</h3>
+    </div>
+    <ul class="ul-navbar">
+        <li class="li-navbar">
+            <a href="../index.html" class="a-navbar"><b>HOME</b></a>
+        </li>
+        <li class="li-navbar">
+            <a href="../profile.html" class="a-navbar"><b>PROFILE</b></a>
+        </li>
+        <li class="li-navbar">
+            <a href="https://ubpkarawang.ac.id/" class="a-navbar" target="_blank"><b>UBP KARAWANG</b></a>
+        </li>
+    </ul>
+    </div>
+    <!-- NAVBAR END -->
+
+    <div class="materi-page">
+        <div class="materi-box">
+            <h3>APA ITU SQL, DDL, DML, DCL, dan TCL?</h3>
+            <p><b>Apa itu SQL?</b></p>
+            <p>SQL (Structured Query Language) adalah bahasa standar yang digunakan untuk mengakses, mengelola, dan memanipulasi data di dalam database relasional. 
+                SQL memungkinkan kita untuk membuat database, mengisi data, menampilkan data, memperbarui data, dan juga menghapus data.</p>
+            <br>
+            <p>SQL pertama kali dikembangkan oleh IBM pada tahun 1970-an dan kini menjadi bahasa universal yang digunakan di hampir semua sistem database.</p>
+            <br>
+            <p><b>Fungsi Utama SQL:</b></p>
+            <ul>
+                <li>Membuat struktur database (tabel, kolom, relasi).</li>
+                <li>Memasukkan, menampilkan, atau memperbarui data.</li>
+                <li>Mengatur hak akses pengguna.</li>
+                <li>Melakukan analisis dan pencarian data.</li>
+            </ul>
+            <br>
+            <p><b>SQL Commands</b></p>
+            <br>
+            <img src="../images/sql commands.png" alt="SQL Commands" class="isimateri-img">
+            <br>
+            <p><b>DDL (Data Definition Language)</b></p>
+            <p>DDL (Data Definition Language) adalah bagian dari SQL yang digunakan untuk mendefinisikan struktur database. Dengan DDL kita bisa membuat tabel baru, mengubah struktur tabel yang sudah ada,
+                atau menghapus tabel yang tidak diperlukan.</p>
+            <br>
+            <p>Perintah DDL biasanya langsung disimpan secara permanen di database, artinya tidak bisa dibatalkan dengan <b>"ROLLBACK".</b></p>
+            <br>
+            <p><b>Fungsi Utama DDL:</b></p>
+            <ul>
+                <li>CREATE : Mmebuat tabel atau database baru.</li>
+                <li>ALTER : Mengubah struktur tabel (misalnya menambah kolom baru).</li>
+                <li>DROP : Menghapus tabel atau database</li>
+                <li>TRUNCTAE : Menghapus semua isi tabel tanpa menghapus strukturnya.</li>
+            </ul>
+            <br>
+            <p><b>Contoh Perintah DDL:</b></p>
+            <br>
+            <img src="../images/ddl create table.png" alt="DDL Create Table" class="isimateri-img">
+            <p>Contoh lain:</p>
+            <img src="../images/ddl alter and drop.png" alt="DDL Alter and Drop" class="isimateri-img">
+            <br>
+            <p><b>DML (Data Manipulation Language)</b></p>
+            <p>DML (Data Manipulation Language) digunakan untuk memanipulasi isi data yang terdapat di dalam tabel. Dengan DML, kita bisa menambah, menampilkan, mengubah, atau menghapus data tanpa mengubah struktur tabelnya.</p>
+            <br>
+            <p>Berbeda dengan DDL, Perintah DML bisa dibatalkan menggunakan TCL (Transaction Control Language) seperti <b>"ROLLBACK"</b> jika perubahan belum disimpan dengan <b>"COMMIT"</b>.</p>
+            <br>
+            <p><b>Fungsi Utama DML:</b></p>
+            <ul>
+                <li>INSERT : Menambahkan data baru ke tabel.</li>
+                <li>SELECT : menampilkan data dari tabel.</li>
+                <li>UPDATE : Mengubah data yang sudah ada.</li>
+                <li>DELETE : Menghapus data dari tabel</li>
+            </ul>
+            <br>
+            <p><b>Contoh Perintah DML:</b></p>
+            <br>
+            <img src="../images/dml contoh.png" alt="Contoh Perintah DML" class="isimateri-img">
+            <br>
+            <p><b>DCL (Data Control Language)</b></p>
+            <p>DCL (Data Control Language) digunakan untuk mengatur hak akses dan izin pengguna dalam database. Dengan DCL, administrator database dapat memberikan atau mencabut hak tertentu kepada pengguna agar sistem tetap aman dan terkontrol.</p>
+            <br>
+            <p><b>Fungsi Utama DCL:</b></p>
+            <ul>
+                <li>GRANT : Memberikan izin (hak akses) kepada pengguna.</li>
+                <li>REVOKE : Mencabut izin yang telah diberikan.</li>
+            </ul>
+            <br>
+            <p><b>Contoh Perintah DCL:</b></p>
+            <br>
+            <img src="../images/dcl revoke and grant.png" alt="Contoh Perintah DCL GRANT dan REVOKE" class="isimateri-img">
+            <br>
+            <p>Perintah ini sangat penting untuk menjaga keamanan data agar tidak semua pengguna memiliki akases penuh terhadap database.</p>
+            <br>
+            <p><b>TCL (Transaction Control Language)</b></p>
+            <p>TCL (Transaction Control Language) adalah bagian dari SQL yang digunakan untuk mengatur proses transaksi di dalam database. Transaksi dalam database berarti serangkaian perintah yang dijalankan secara bersama-sama, jika salah satu gagal,
+                maka semuanya bisa dibatalkan agar tetap konsisten.</p>
+            <br>
+            <p>TCL biasanya digunakan bersama dengan perintah DML seperti <b>INSERT, UPDATE,</b> dan <b>DELETE</b>.</p>
+            <br>
+            <p><b>Fungsi Utama TCL:</b></p>
+            <ul>
+                <li>COMMIT : Menyimpan semua perubahan yang telah dilakukan.</li>
+                <li>ROLLBACK : Membatalkan perubahan jika terjadi kesalahan.</li>
+                <li>SAVEPOINT : Menandai titik tertentu dalam transaksi agar bisa kembali ke titik itu jika perlu.</li>
+            </ul>
+            <br>
+            <p><b>Contoh Perintah TCL:</b></p>
+            <br>
+            <img src="../images/tcl contoh.png" alt="Contoh dari TCL " class="isimateri-img">
+            <br>
+            <p>Dengan TCL, sistem database dapat menjaga keutuhan (integritas) data agar tidak rusak meskipun terjadi kesalahan saat transaksi berlangsung.</p>
+            <br>
+            <p><b>Kesimpulan</b></p>
+            <p>SQL merupakan bahasa utama dalam dunia basis data, dan di dalamnya terdapat lima bagian penting yang memiliki fungsi berbeda-beda:</p>
+            <ul>
+                <li>DDL untuk membuat dan mengubah struktur database.</li>
+                <li>DML untuk mengelola isi data di dalam tabel.</li>
+                <li>DCL untuk mengatur hak akses pengguna.</li>
+                <li>TCL untuk menjaga keutuhan data dalam transaksi.</li>
+            </ul>
+            <br>
+            <p>Mempelajari perintah-perintah ini adalah langkah pertama untuk bekerja secara efektif dengan data. Semakin Anda menggunakannya, semakin mudah untuk mendapatkan database untuk melakukan persis apa yang Anda butuhkan.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2025 Ahmad Farid Ilham Fauzi | All Rights Reserved</p>
+    </div>
+
+</body>
+</html>
